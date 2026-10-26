@@ -1,0 +1,19 @@
+<script>
+  let user = prompt("Who's there?");
+
+  if (user == null) {
+    alert("Cancel");
+  } else if (user.toLowerCase() !== "admin") {
+    alert("Unknown");
+  } else {
+    let pass = prompt("Password?");
+    
+    if (pass === null) {
+      alert("Cancelled");
+    } else if (pass !== "TheMaster") {
+      alert("Wrong password!");
+    } else {
+      alert("Welcome!");
+    }
+  }
+</script>
