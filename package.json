@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-learning",
+  "version": "1.0.0",
+  "description": "Fullstack learning repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "tdd": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca-avila/fullstack-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/luca-avila/fullstack-learning/issues"
+  },
+  "homepage": "https://github.com/luca-avila/fullstack-learning#readme",
+  "devDependencies": {
+    "vitest": "^5.0.5"
+  }
+}
