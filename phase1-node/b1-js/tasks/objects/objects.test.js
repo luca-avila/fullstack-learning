@@ -1,4 +1,5 @@
 import { checkEmptyness, sum, multiplyNumeric } from "./objects.js";
+import { Calculator } from "./constructor.js";
 import { describe, it, expect } from "vitest";
 
 describe("checkEmptyness", () => {
@@ -30,5 +31,21 @@ describe("multiplyNumeric", () => {
 
   it("An object with numeric and string values", () => {
     expect(multiplyNumeric({a: 100, b: "hello"})).toEqual({a: 200, b: "hello"});
+  });
+});
+
+describe("Calculator constructor", () => {
+  let calculator =  new Calculator(2, 4);
+
+  it("Reads correctly the properties", () => {
+    expect(calculator.read()).toBe("Num1: 2, Num2: 4");
+  });
+
+  it("Sums both properties", () => {
+    expect(calculator.sum()).toBe(6);
+  });
+
+  it("Multiply both properties", () => {
+    expect(calculator.mul()).toBe(8);
   });
 });
