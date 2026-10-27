@@ -5,12 +5,11 @@ user.surname = "Smith";
 user.name = "Pete";
 delete user.name;
 
-console.log(user);
 
 // ---
 // Create check emptyness function
 
-function checkEmptyness(obj) {
+export function checkEmptyness(obj) {
 
   for (let key in obj) {
     return false;
@@ -19,24 +18,25 @@ function checkEmptyness(obj) {
   return true;
 }
 
-let schedule = {};
-console.log(checkEmptyness(schedule));
-
-schedule["8:30"] = "get up";
-console.log(checkEmptyness(schedule));
 
 // Sum all properties of an object
+export function sum(obj) {
+  let sum = 0;
+  for (let key in obj) {
+    sum += obj[key];
 
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
-};
-
-let sum = 0;
-
-for (let person in salaries) {
-  sum += salaries[person];
+  }
+    return sum;
 }
+// ---
+// Multiply numeric property values by 2
 
-console.log(sum);
+export function multiplyNumeric(obj){
+  for (let key in obj) {
+    if(typeof obj[key] === "number") {
+      obj[key] *= 2;
+    }
+  }
+
+  return obj;
+};
