@@ -7,7 +7,7 @@ Node is JavaScript: if the language is shaky, everything else is built on sand. 
 ## Sessions
 
 - [x] **S1 — Fundamentals** ([`s1-fundamentals/`](s1-fundamentals/)): from Variables to Arrow functions basics.
-- [ ] **S2 — Objects** ([`s2-objects/`](s2-objects/)): Objects, Object references and copying, Object methods "this", Optional chaining, Arrays and Array methods.
+- [x] **S2 — Objects** ([`s2-objects/`](s2-objects/)): Objects, Object references and copying, Object methods "this", Optional chaining, Arrays and Array methods.
 - [ ] **S3 — Data structures:** Iterables, Map and Set, Object.keys/values/entries, Destructuring assignment, JSON methods.
 - [ ] **S4 — Functions in depth:** Rest parameters and spread syntax, Variable scope and closure, Function binding, Arrow functions revisited. Kata 3.
 - [ ] **S5 — Classes and errors:** Class basic syntax, Class inheritance, Private and protected, Error handling (try..catch and Custom errors). Kata 1.
