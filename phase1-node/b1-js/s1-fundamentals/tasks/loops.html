@@ -1,9 +1,9 @@
 <script>
   // javascript.info: https://javascript.info/while-for
-  // Keep asking for a number until the visitor enters one greater than 100.
+  // Keep asking for a number until the visitor enters one greater than 100 or cancels.
   let n = 0;
 
-  while (n <= 100) {
+  while (n !== null && n !== "" && n <= 100) {
     n = prompt("Write a number greater than 100");
   }
 
@@ -12,14 +12,14 @@
 
   n = prompt("Write a prime number");
 
+  let isPrime = n >= 2;
+
   for (let i = 2; i < n; i++) {
-    let isPrime = true;
-    console.log(i);
     if (n % i === 0) {
-      alert("It's not a prime number");
+      isPrime = false;
       break;
     }
-
-    alert("It's prime");
   }
+
+  alert(isPrime ? "It's prime" : "It's not a prime number");
 </script>
