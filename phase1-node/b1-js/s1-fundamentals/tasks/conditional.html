@@ -1,4 +1,7 @@
 <script>
+  // javascript.info: https://javascript.info/ifelse
+  // Check the login: "Admin" is asked for a password ("TheMaster"), anyone else is unknown.
+  // Handle a cancel at each step.
   let user = prompt("Who's there?");
 
   if (user == null) {
@@ -7,7 +10,7 @@
     alert("Unknown");
   } else {
     let pass = prompt("Password?");
-    
+
     if (pass === null) {
       alert("Cancelled");
     } else if (pass !== "TheMaster") {

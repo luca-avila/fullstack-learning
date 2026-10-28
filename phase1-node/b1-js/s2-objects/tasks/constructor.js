@@ -1,3 +1,5 @@
+// javascript.info: https://javascript.info/constructor-new
+
 // Create a constructor function Calculator that creates objects with 3 methods: sum, mul, read
 
 export function Calculator(num1, num2) {

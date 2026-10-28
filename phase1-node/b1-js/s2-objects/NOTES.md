@@ -1,3 +1,5 @@
+# S2 — Objects
+
 ## Objects: the basics
 - Unreachable values are garbage collected.
 - Something is reachable if you can get it from a root.

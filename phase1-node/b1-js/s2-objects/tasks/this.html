@@ -1,0 +1,33 @@
+<script>
+  // javascript.info: https://javascript.info/object-methods
+  // Calculator: read two numbers and show their sum and product.
+  let a = prompt("Insert a number");
+  let b = prompt("Insert another number");
+
+  let calculator = { a, b };
+
+  calculator.sum = function () { return +this.a + +this.b };
+  calculator.mult = function () { return +this.a * +this.b };
+
+  alert(calculator.sum());
+  alert(calculator.mult());
+
+  // ---
+  // Chaining: make the ladder methods chainable.
+  let ladder = {
+    step: 0,
+    up() {
+      this.step++;
+      return this;
+    },
+    down() {
+      this.step--;
+      return this;
+    },
+    showStep: function() { // shows the current step
+      alert( this.step );
+    }
+  };
+
+  ladder.up().up().up().showStep();
+</script>
