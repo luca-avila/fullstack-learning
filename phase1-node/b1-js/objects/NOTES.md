@@ -1,7 +1,3 @@
-## Fundamentals
-- There are 8 data types in JS: number, bigint, boolean, string, object, symbol, null, undefined.
-- Symbols are a primitive data type that represents a unique identifier.
-
 ## Objects: the basics
 - Unreachable values are garbage collected.
 - Something is reachable if you can get it from a root.
